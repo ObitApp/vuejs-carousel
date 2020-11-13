@@ -4,7 +4,7 @@
 
         </div>
         <ul class="Comments__list">
-            <comment v-for="comment in descendantComments" :comment="comment"></comment>
+            <comment v-for="(comment, index) in descendantComments" :comment="comment" :key="index"></comment>
         </ul>
     </div>
 </template>
